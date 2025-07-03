@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonateNex | Premium Donation Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <!-- 3D Animation Background -->
+    <div id="animation-container"></div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.svg" alt="DonateNex Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#features" data-translate="features">Features</a>
+                <a href="#how-it-works" data-translate="how_it_works">How It Works</a>
+                <select id="language-switcher">
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbekcha</option>
+                    <option value="ru">Русский</option>
+                    <option value="kz">Қазақша</option>
+                    <option value="kg">Кыргызча</option>
+                    <option value="tj">Тоҷикӣ</option>
+                </select>
+                <a href="#donate" class="btn-donate" data-translate="donate">Donate</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-translate="hero_title">Raise Money <span>Instantly</span> from Your Supporters!</h1>
+                <p data-translate="hero_subtitle">The most advanced donation platform for content creators worldwide.</p>
+                <div class="cta-buttons">
+                    <a href="#donate" class="btn-primary" data-translate="get_started">Get Started</a>
+                    <a href="#demo" class="btn-secondary" data-translate="watch_demo">Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="donation-animation" id="donation-visualization"></div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2 data-translate="features_title">Why Choose <span>DonateNex</span>?</h2>
+            <div class="feature-cards">
+                <!-- Feature cards will be populated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
